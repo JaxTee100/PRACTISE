@@ -14,11 +14,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className='bg-black text-white'
+        className='bg-[#0d0c22] text-white m-0 p-0'
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="flex flex-col justify-between border border-purple-500  m-auto px-5 min-h-[100vh]">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
+        
       </body>
     </html>
   );
